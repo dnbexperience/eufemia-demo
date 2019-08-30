@@ -13,3 +13,10 @@ This setup is using React within [create-react-app](https://github.com/facebook/
 
 1. Make sure You have installed the dependencies `npm install`.
 1. Now You can run `npm start` inside this demo App.
+
+## Internet Explorer 11
+
+To test this app properly in IE11, run these steps:
+
+1. Make a production build `npm run build`
+1. And watch this build `npx live-server build`
