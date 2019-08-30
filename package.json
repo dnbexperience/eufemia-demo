@@ -1,0 +1,50 @@
+{
+  "name": "eufemia-demo-spa",
+  "version": "1.0.0",
+  "description": "Eufemia Demos",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "author": "DNB Team & Tobias Høegh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnbexperience/eufemia-demo.git"
+  },
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "^10.0.16",
+    "@emotion/styled": "^10.0.15",
+    "@reach/router": "^1.2.1",
+    "classnames": "^2.2.6",
+    "css-vars-ponyfill": "^2.1.1",
+    "dnb-ui-lib": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-scripts": "3.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write src/**/*.{js,jsx}"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
