@@ -16,6 +16,13 @@ This setup is using React within [create-react-app](https://github.com/facebook/
 
 ## Internet Explorer 11
 
+By using the `react-app-polyfill` it is possible to run this app in **development** mode.
+
+```js
+import 'react-app-polyfill/ie11'
+import 'react-app-polyfill/stable'
+```
+
 To test this app properly in IE11, run these steps:
 
 1. Make a production build `npm run build`
