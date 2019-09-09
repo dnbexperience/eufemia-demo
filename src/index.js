@@ -11,11 +11,18 @@ import 'dnb-ui-lib/style/basis'
 import 'dnb-ui-lib/style/components'
 import 'dnb-ui-lib/style/themes/ui'
 
+import EufemiaProvider from 'dnb-ui-lib/shared/Provider'
+
 // This polyfill is only needed if we use Styled Components (CSS-in-JS) syntax
 import cssVars from 'css-vars-ponyfill'
 cssVars()
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <EufemiaProvider formRow={{}}>
+    <App />
+  </EufemiaProvider>,
+  document.getElementById('root')
+)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
