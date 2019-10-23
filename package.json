@@ -1,6 +1,6 @@
 {
   "name": "eufemia-demo-spa",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Eufemia Demos using Create React App",
   "license": "SEE LICENSE IN LICENSE FILE",
   "author": "DNB Team & Tobias Høegh",
@@ -10,18 +10,18 @@
   },
   "private": true,
   "dependencies": {
-    "@emotion/core": "^10.0.17",
-    "@emotion/styled": "^10.0.17",
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.22",
     "@reach/router": "^1.2.1",
     "classnames": "^2.2.6",
-    "css-vars-ponyfill": "^2.1.1",
-    "dnb-ui-lib": "^4.14.3",
+    "css-vars-ponyfill": "^2.1.2",
+    "dnb-ui-lib": "^5.0.0-beta.1",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-app-polyfill": "^1.0.2",
-    "react-dom": "^16.9.0",
+    "react": "^16.11.0",
+    "react-app-polyfill": "^1.0.4",
+    "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
