@@ -1,3 +1,8 @@
+/**
+ * To showcase the usage of the dnb-ui-lib/src in React
+ *
+ */
+
 import 'react-app-polyfill/ie11'
 import 'react-app-polyfill/stable'
 
@@ -6,20 +11,31 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
-// import 'dnb-ui-lib/src/style'
 import 'dnb-ui-lib/style/basis'
 import 'dnb-ui-lib/style/components'
 import 'dnb-ui-lib/style/themes/ui'
 
+import { CacheProvider } from '@emotion/core'
+import createEmotionCache from '@emotion/cache'
+import stylisPlugin from 'dnb-ui-lib/style/stylis'
+
 import EufemiaProvider from 'dnb-ui-lib/shared/Provider'
 
-// This polyfill is only needed if we use Styled Components (CSS-in-JS) syntax
-import cssVars from 'css-vars-ponyfill'
-cssVars()
+// IE 11 Polyifll: Use either the global polyfill ...
+// import cssVars from 'css-vars-ponyfill'
+// cssVars()
+
+// ... or the stylis plugin
+const emotionCache = createEmotionCache({
+  stylisPlugins: [stylisPlugin]
+})
 
 ReactDOM.render(
   <EufemiaProvider formRow={{}}>
-    <App />
+    <CacheProvider value={emotionCache}>
+      <App />
+    </CacheProvider>
+    ,
   </EufemiaProvider>,
   document.getElementById('root')
 )
