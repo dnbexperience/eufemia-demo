@@ -21,6 +21,7 @@ import Layout from '../layout/Layout'
 // Get Eufemia in
 import { H1, H2, P } from 'dnb-ui-lib/elements'
 import {
+  Modal,
   FormSet,
   FormRow,
   Input,
@@ -35,7 +36,7 @@ import {
   GlobalStatus
 } from 'dnb-ui-lib/components'
 import {
-  save_alt_01 as SaveIcon,
+  save as SaveIcon,
   trash as TrashIcon,
   attachment as AttachmentIcon
 } from 'dnb-ui-lib/icons'
@@ -136,6 +137,28 @@ const MainForm = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore.
           </Ingress>
+
+          <Button
+            id="custom-triggerer"
+            text="Custom trigger Button"
+            on_click={e => {
+              console.log('on_click', e)
+              return (
+                <Modal
+                  title="Modal Title"
+                  trigger_hidden="true"
+                  open_state="opened"
+                  labelled_by="custom-triggerer"
+                >
+                  <Section spacing style_type="divider">
+                    <P>
+                      This Modal was opened by a custom trigger button.
+                    </P>
+                  </Section>
+                </Modal>
+              )
+            }}
+          />
 
           <Space top="small">
             <FormRow label="Did you receive some money from the ATM?">
@@ -303,7 +326,7 @@ const HeaderTitleWrapper = styled(Space)`
 
 // Custom paragraph
 const IngressRaw = styled(P)`
-  font-weight: var(--font-weight-demi);
+  font-weight: var(--font-weight-medium);
   color: var(--color-emerald-green);
 `
 const Ingress = props => (
