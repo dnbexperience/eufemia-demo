@@ -138,28 +138,6 @@ const MainForm = () => {
             eiusmod tempor incididunt ut labore.
           </Ingress>
 
-          <Button
-            id="custom-triggerer"
-            text="Custom trigger Button"
-            on_click={e => {
-              console.log('on_click', e)
-              return (
-                <Modal
-                  title="Modal Title"
-                  trigger_hidden="true"
-                  open_state="opened"
-                  labelled_by="custom-triggerer"
-                >
-                  <Section spacing style_type="divider">
-                    <P>
-                      This Modal was opened by a custom trigger button.
-                    </P>
-                  </Section>
-                </Modal>
-              )
-            }}
-          />
-
           <Space top="small">
             <FormRow label="Did you receive some money from the ATM?">
               <ToggleButton.Group
