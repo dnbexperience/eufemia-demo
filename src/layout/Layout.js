@@ -19,13 +19,12 @@ const Wrapper = styled.div`
 `
 const WrapperInner = styled.div`
   /* for large screesn */
-  width: 84vw; /* apr. the same as 60rem */
+  width: 100%; /* apr. the same as 60rem */
   max-width: 60rem;
   padding: 0 1rem;
 
   /* for small screesn */
   @media (max-width: 40em) {
-    width: 95vw;
     padding: 0;
   }
 `
