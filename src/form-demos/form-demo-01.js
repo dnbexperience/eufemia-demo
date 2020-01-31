@@ -21,7 +21,6 @@ import Layout from '../layout/Layout'
 // Get Eufemia in
 import { H1, H2, P } from 'dnb-ui-lib/elements'
 import {
-  Modal,
   FormSet,
   FormRow,
   Input,
