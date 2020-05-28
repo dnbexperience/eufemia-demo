@@ -12,7 +12,7 @@
  */
 
 import React, { useState, useContext } from 'react'
-import Head from 'react-helmet'
+import { Helmet as Head } from 'react-helmet'
 import styled from '@emotion/styled'
 
 // App layout wrapper
@@ -63,7 +63,7 @@ const Header = () => (
     </Head>
     <HeaderSection style_type="mint-green">
       <HeaderTitleWrapper top="x-large">
-        <H1 style_type="small">Card complaint</H1>
+        <H1 size="x-large">Card complaint</H1>
       </HeaderTitleWrapper>
 
       <StepIndicator
@@ -77,7 +77,7 @@ const Header = () => (
             title: 'Summary'
           }
         ]}
-        on_change={e => {
+        on_change={(e) => {
           console.log('StepIndicator.on_change', e)
         }}
       />
@@ -306,7 +306,7 @@ const IngressRaw = styled(P)`
   font-weight: var(--font-weight-medium);
   color: var(--color-emerald-green);
 `
-const Ingress = props => (
+const Ingress = (props) => (
   <IngressRaw top="x-small" bottom="small" {...props} />
 )
 
@@ -359,7 +359,7 @@ const defaultErrors = {
 
 // Form Logic and Event handling
 const FormContext = React.createContext({})
-const FormLogic = props => {
+const FormLogic = (props) => {
   const [currentValues, updateValues] = useState(defaultValues)
   const [currentErrors, updateErrors] = useState({})
 
@@ -392,7 +392,7 @@ const FormLogic = props => {
   }
 
   const resetErrors = () => updateErrors({})
-  const setValues = newProps =>
+  const setValues = (newProps) =>
     updateValues({ ...currentValues, ...newProps })
 
   // Our context we use for state handling
