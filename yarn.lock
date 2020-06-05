@@ -3753,10 +3753,10 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
-dnb-ui-lib@^7.0.0-beta.25:
-  version "7.0.0-beta.25"
-  resolved "https://registry.yarnpkg.com/dnb-ui-lib/-/dnb-ui-lib-7.0.0-beta.25.tgz#7f3dd82cd570d45fe50709ff796025407851727e"
-  integrity sha512-xbJi+SbcgYAVG1/1fwm4YMGuEFXhttR71xyfYBhC/jBQuTm8kdARx4pjEIhNYi+FiSkpYMfrhbnw+yeUSKO3uA==
+dnb-ui-lib@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/dnb-ui-lib/-/dnb-ui-lib-7.0.0.tgz#a8b24404eb069e5ab54d47758b9eeda3e7886b68"
+  integrity sha512-1boJjFapTnviJU5/ndvyzGmDTSBUrG2vQDz4rbWhjtBKsQhEd+wPFTnZLx4D9LFLhDZHD6ZFyvD5c3NDXrNKow==
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "^2.2.6"
