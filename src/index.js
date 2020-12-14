@@ -15,7 +15,7 @@ import 'dnb-ui-lib/style/basis'
 import 'dnb-ui-lib/style/components'
 import 'dnb-ui-lib/style/themes/ui'
 
-import { CacheProvider } from '@emotion/core'
+import { CacheProvider } from '@emotion/react'
 import createEmotionCache from '@emotion/cache'
 import stylisPlugin from 'dnb-ui-lib/style/stylis'
 
@@ -27,6 +27,7 @@ import EufemiaProvider from 'dnb-ui-lib/shared/Provider'
 
 // ... or the stylis plugin
 const emotionCache = createEmotionCache({
+  key: 'demo',
   stylisPlugins: [stylisPlugin]
 })
 
